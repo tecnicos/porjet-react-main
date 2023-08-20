@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social media website</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">SOCIAL MEDIA</h2>
+            <div class="search-bar">
+                <i class="bi bi-search"></i>
+                <input type="search" placeholder="search for creators">
+            </div>
+            <div class="create">
+                <label for="#create-posts" class="btn btn-primary">Create</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left">
+                <a  class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>User name</h4>
+                        <p class="muted">
+                            @User
+                        </p>
+                    </div>
+                </a>
+                <div class="sidebar">
+                    <a  class="menu-item active">
+                        <span><i class="bi bi-house"></i></span> <h3>Home</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span><i class="bi bi-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a  class="menu-item" id="notifications">
+                        <span><i class="bi bi-bell"><small class="notification-count">9+</small></i></span> <h3>Notifications</h3>
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>User1</b> accepted your friend request
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>User2</b> Liked your photo
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-4.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>User3</b> taged you on a post
+                                    <small class="text-muted">21 hour ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-5.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>User4</b> commented on a post you follow
+                                    <small class="text-muted"> 2  minutes ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="menu-item" id="messages">
+                        <span><i class="bi bi-envelope" ><small class="notification-count">6</small></i></span> <h3>Message</h3>  
+                    </a>    
+                    <a  class="menu-item">
+                        <span><i class="bi bi-bookmark"></i></span> <h3>Bookmarks</h3>
+                    </a>    
+                    <a  class="menu-item">
+                        <span><i class="bi bi-graph-up"></i></span> <h3>Analytics</h3>
+                    </a>    
+                    <a  class="menu-item">
+                        <span><i class="bi bi-paint-bucket"></i></span> <h3>Theme</h3>
+                    </a>   
+                    <a  class="menu-item ">
+                        <span><i class="bi bi-gear"></i></span> <h3>Settings</h3>
+                    </a>   
+                       
+                </div>
+            <label for="create-post" class="btn btn-primary">Create Post</label>
+        </div>
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-8.jpg" alt="">
+                        </div>
+                        <p class="name">Your story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-9.jpg" alt="">
+                        </div>
+                        <p class="name">User1 Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-10.jpg" alt="">
+                        </div>
+                        <p class="name">User2 Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-11.jpg" alt="">
+                        </div>
+                        <p class="name">User3 Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-12.jpg" alt="">
+                        </div>
+                        <p class="name">User4 Story</p>
+                    </div>
+                </div>
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <input type="text" placeholder="what's on your mind main user" id="creat-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-13.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>User Name</h3>
+                                    <small>France, 20 minutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="bi bi-three-dots"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-heart"></i></span>
+                                <span><i class="bi bi-chat"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="book-mark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-4.jpg" alt=""></span>
+                            <span><img src="./images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>RAHOUL KUMAR</b> and <b> 5,000 others
+                            </b></p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Post Caption</b> Lorem ipsum dolor sit amet. </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-12.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>User Name</h3>
+                                    <small>Casablanca, 2 minutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="bi bi-three-dots"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-2.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-heart"></i></span>
+                                <span><i class="bi bi-chat"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="book-mark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-11.jpg" alt=""></span>
+                            <span><img src="./images/profile-6.jpg" alt=""></span>
+                            <span><img src="./images/profile-14.jpg" alt=""></span>
+                            <p>Liked by <b>HOUL KUMAR</b> and <b> 575 others
+                            </b></p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Post Caption</b> Lorem ipsum dolor sit amet. </p>
+                        </div>
+                        <div class="comments text-muted">View all 7 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-1.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>User Name</h3>
+                                    <small>Roma, 30 minutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="bi bi-three-dots"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-3.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-heart"></i></span>
+                                <span><i class="bi bi-chat"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="book-mark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-16.jpg" alt=""></span>
+                            <span><img src="./images/profile-14.jpg" alt=""></span>
+                            <span><img src="./images/profile-5.jpg" alt=""></span>
+                            <p>Liked by <b>User</b> and <b> 50 others
+                            </b></p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Post Caption</b> Lorem ipsum dolor sit amet. </p>
+                        </div>
+                        <div class="comments text-muted">View all 27 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-17.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>User Name</h3>
+                                    <small>France, 20 minutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="bi bi-three-dots"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-3.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-heart"></i></span>
+                                <span><i class="bi bi-chat"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="book-mark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-4.jpg" alt=""></span>
+                            <span><img src="./images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>RAHOUL KUMAR</b> and <b> 5,000 others
+                            </b></p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Post Caption</b> Lorem ipsum dolor sit amet. </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-19.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>User Name</h3>
+                                    <small>France, 20 minutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="bi bi-three-dots"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-5.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-heart"></i></span>
+                                <span><i class="bi bi-chat"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="book-mark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-4.jpg" alt=""></span>
+                            <span><img src="./images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>RAHOUL KUMAR</b> and <b> 5,000 others
+                            </b></p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Post Caption</b> Lorem ipsum dolor sit amet. </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-20.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>User Name</h3>
+                                    <small>France, 20 minutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="bi bi-three-dots"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-6.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-heart"></i></span>
+                                <span><i class="bi bi-chat"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="book-mark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-4.jpg" alt=""></span>
+                            <span><img src="./images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>RAHOUL KUMAR</b> and <b> 5,000 others
+                            </b></p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Post Caption</b> Lorem ipsum dolor sit amet. </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-9.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>User Name</h3>
+                                    <small>France, 20 minutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="bi bi-three-dots"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-7.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-heart"></i></span>
+                                <span><i class="bi bi-chat"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="book-mark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-4.jpg" alt=""></span>
+                            <span><img src="./images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>RAHOUL KUMAR</b> and <b> 5,000 others
+                            </b></p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Post Caption</b> Lorem ipsum dolor sit amet. </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>messages</h4><i class="bi bi-pencil-square"></i>
+
+                    </div>
+                    <div class="search-bar">
+                        <i class="bi bi-search"></i>
+                        <input type="search" placeholder="searchmessages" id="message-search">
+                    </div>
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6 >General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-17.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>USer17</h5>
+                            <p class="text-bold">yo dude!!</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-18.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>USer17</h5>
+                            <p class="text-muted">hello buddy</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-16.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>USer17</h5>
+                            <p class="text-muted">i'm mad at you</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-19.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>USer17</h5>
+                            <p class="text-bold">what's up?!</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-20.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>USer17</h5>
+                            <p class="text-muted">Need your help</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-10.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>USer17</h5>
+                            <p class="text-bold">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-13.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>User anonyme</h5>
+                                <p class="text-muted">
+                                    8 mutal friends
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn ">
+                                decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-5.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>User anonyme</h5>
+                                <p class="text-muted">
+                                    0 mutal friends
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn ">
+                                decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-11.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>User anonyme</h5>
+                                <p class="text-muted">
+                                    18 mutal friends
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn ">
+                                decline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
